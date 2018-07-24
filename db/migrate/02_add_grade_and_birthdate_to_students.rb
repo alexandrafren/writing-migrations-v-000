@@ -1,4 +1,4 @@
-class AddNameAndBirthdateToStudents < ActiveRecord::Migration
+class AddNameAndBirthdateToStudents < ActiveRecord::Migration[5.1]
 
   def change
     add_column :students do |t|
@@ -6,5 +6,5 @@ class AddNameAndBirthdateToStudents < ActiveRecord::Migration
       t.integer :grade
     end
   end
-  
+
 end
